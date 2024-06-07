@@ -3,18 +3,21 @@ import '@/css/prism.css'
 import '@/css/extra.css'
 import 'katex/dist/katex.css'
 import '@fontsource/inter/variable-full.css'
+// Next
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import siteMetadata from '@/data/siteMetadata'
-import Analytics from '@/components/analytics'
+import { SessionProvider } from 'next-auth/react'
+// React
+import { Provider } from '@lyket/react'
+import ProgressBar from 'react-scroll-progress-bar'
+// Components
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
-import ProgressBar from 'react-scroll-progress-bar'
 import ScrollTop from '@/components/ScrollTop'
-import { SessionProvider } from 'next-auth/react'
-import { Provider } from '@lyket/react'
+// Data
+import siteMetadata from '@/data/siteMetadata'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
@@ -61,7 +64,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}
-          <Analytics />
+
           <LayoutWrapper>
             <Component {...pageProps} />
           </LayoutWrapper>

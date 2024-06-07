@@ -1,4 +1,6 @@
+// Data
 import siteMetadata from '@/data/siteMetadata'
+// Components
 import { PageSEO } from '@/components/SEO'
 
 export default function PrivacyPolicy() {

@@ -1,5 +1,7 @@
+// Components
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
+// Data
 import siteMetadata from '@/data/siteMetadata'
 
 export default function FourZeroFour() {

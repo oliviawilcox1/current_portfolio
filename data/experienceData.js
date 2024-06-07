@@ -1,29 +1,38 @@
 const experienceData = [
   {
-    title: 'Data Engineering Intern',
-    company: 'Accenture',
-    location: 'Ahmedabad, India',
-    range: 'January 2022 - May 2022',
-    url: 'https://www.accenture.com/gr-en/about/consulting-index',
+    title: 'Lead Full Stack Engineer',
+    company: 'Nextiles',
+    location: 'NYC, NY',
+    range: '2022 - Present',
+    url: 'https://www.nextiles.com/',
     text1:
-      'Helped with the digital transformation of BOAT by working on their platform called ByteETL.',
+      'Architected, developed, and deployed a production-ready full stack application within three months using React, Material-UI, Express, and various charting libraries (Chart.js, D3, React Apex Charts), resulting in a 40% increase in user engagement through dynamic interactive front end data visualizations and enhanced data analysis capabilities',
     text2:
-      'Built the encryption component for the platform using Scala and Spark which included 2 encoding functionalities : ENCRYPT and HASH.',
+      'Built and integrated an internal administrative dashboard application, enabling streamlined access to DynamoDB and S3 via AWS SDK. Replaced any manual database work and allowed executives to perform CRUD operations on all database entries via the internal tool, improving client data management efficiency by 72%.',
     text3:
-      'Created JSON wrappers for the encryption components and automated and triggered the pipelines to run at specific intervals using CronJob.',
+      'Authored comprehensive Jest test suites and established automated CI/CD pipelines, increasing code quality and deployment efficiency by reducing manual errors and deployment times by 10%',
+    text4:
+      'Trained and supervised a new hire, providing comprehensive onboarding and ongoing mentorship, which enabled the new team member to become a productive contributor to the client facing web application within weeks.',
   },
   {
-    title: 'Software Engineer Analytics',
-    company: 'HOPS Healthcare',
-    location: 'Ahmedabad, India',
-    range: 'March 2021 - June 2021',
-    url: 'https://hops.healthcare/',
-    text1:
-      'Guided by Mr. Vivek Patel, to create a pipeline that extracts essential information from informal conversations.',
-    text2:
-      'Worked on creating a web app for their healthcare system for doctors to analyze and save reports.',
-    text3:
-      'Developed functions for automatically extracting important elements from reports using BioBERT and Regex.',
+    title: 'Freelance Full Stack Engineer',
+    // company: '',
+    location: 'NYC, NY',
+    range: '2022 - Present',
+    // url: 'https://www.nextiles.com/',
+    // text1:
+    //   'Architected, developed, and deployed a production-ready full stack application within three months using React, Material-UI, Express, and various charting libraries (Chart.js, D3, React Apex Charts), resulting in a 40% increase in user engagement through dynamic interactive front end data visualizations and enhanced data analysis capabilities',
+    // text2:
+    //   'Built and integrated an internal administrative dashboard application, enabling streamlined access to DynamoDB and S3 via AWS SDK. Replaced any manual database work and allowed executives to perform CRUD operations on all database entries via the internal tool, improving client data management efficiency by 72%.',
+    // text3:
+    //   'Authored comprehensive Jest test suites and established automated CI/CD pipelines, increasing code quality and deployment efficiency by reducing manual errors and deployment times by 10%',
+    // text4: 'Trained and supervised a new hire, providing comprehensive onboarding and ongoing mentorship, which enabled the new team member to become a productive contributor to the client facing web application within weeks.'
+  },
+  {
+    title: 'Software Engineer',
+    company: 'General Assembly',
+    location: 'NYC, NY',
+    range: '2022',
   },
 ]
 
