@@ -4,8 +4,6 @@ import projectsData from '@/data/projectsData'
 // Components
 import { PageSEO } from '@/components/SEO'
 import Card from '@/components/Card'
-import GithubPersonal from '@/components/metrics/GithubPersonal'
-import GitHub from '@/components/metrics/Github'
 
 export default function Projects() {
   return (

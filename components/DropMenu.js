@@ -102,7 +102,7 @@ export default function DropMenu() {
               )}
             </Menu.Item>
 
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/contact">
                   <a
@@ -119,7 +119,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
 
             <Menu.Item>
               {({ active }) => (

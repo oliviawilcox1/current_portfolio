@@ -1,15 +1,11 @@
-import { motion } from 'framer-motion'
 import fetcher from 'lib/fetcher'
 import useSWR from 'swr'
 // Components
 import { PageSEO } from '@/components/SEO'
 import ExperienceUI from '@/components/ExperienceUI'
-import Timeline from '@/components/Timeline'
-import Link from '@/components/Link'
 // Data
 import siteMetadata from '@/data/siteMetadata'
 import experienceData from '@/data/experienceData'
-import usesData from '@/data/usesData'
 // Icons
 import { FaCloudShowersHeavy } from 'react-icons/fa'
 import {
@@ -24,7 +20,6 @@ import {
   BsFillCloudMoonFill,
   BsFillCloudFill,
 } from 'react-icons/bs'
-import { getCurrentlyReading } from '@/lib/goodreads'
 
 const Experience = () => {
   const { data } = useSWR('/api/now-playing', fetcher)
@@ -70,10 +65,7 @@ const Experience = () => {
             location={d.location}
             range={d.range}
             url={d.url}
-            text1={d.text1}
-            text2={d.text2}
-            text3={d.text3}
-            text4={d.text4}
+            text={d.text}
           />
         ))}
       </div>

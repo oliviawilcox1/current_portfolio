@@ -4,6 +4,7 @@ import { PageSEO } from '@/components/SEO'
 import Link from '@/components/Link'
 import { RoughNotation } from 'react-rough-notation'
 import { MdOutlineEmail } from 'react-icons/md'
+import { useTheme } from 'next-themes'
 
 export async function getStaticProps() {
   const authorDetails = await getFileBySlug('about', ['default'])
@@ -12,6 +13,8 @@ export async function getStaticProps() {
 
 export default function About({ authorDetails }) {
   const { mdxSource, frontMatter } = authorDetails
+  const { theme, setTheme, resolvedTheme } = useTheme()
+  const color = theme === 'light' ? '#FBA4BC' : '#DE1D8D'
   const {
     name,
     avatar,
@@ -28,7 +31,7 @@ export default function About({ authorDetails }) {
 
   return (
     <>
-      <PageSEO title={`About - ${name}`} description={`A little trivia me`} />
+      <PageSEO title={`About - ${name}`} description={`Personal Information`} />
       <div className="">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5 md:pl-16">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -61,123 +64,147 @@ export default function About({ authorDetails }) {
               </a>
             </div>
           </div>
+
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
             <p>
               <RoughNotation
                 type="bracket"
                 brackets={['left', 'right']}
                 show={true}
-                color="#FF0000"
+                color={color}
                 animationDelay={300}
                 animationDuration={3000}
               >
-                {text1}{' '}
-                <Link
-                  href={'https://www.nextiles.com/'}
-                  className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-                >
-                  Nextiles
-                </Link>
+                {text1}
               </RoughNotation>
             </p>
             <br />
-            {/* <p>
-              This is what I am doing right{' '}
+            <p>
+              {text2}
               <Link
-                href={'/now'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                href={'https://www.nextiles.com'}
+                className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                now
-              </Link>
-            </p> */}
-            <br />
-            {/* <p className="sm:block md:hidden lg:hidden">
-
-              <span className="font-semibold">
                 {' '}
-              </span>
+                {company}.{' '}
+              </Link>
+              {text3}
+            </p>
 
-              <RoughNotation
-                type="underline"
-                show={true}
-                color="#FBCFE8"
-                animationDelay={1500}
-                animationDuration={3000}
-                multiline={true}
-              >
-           
-              </RoughNotation>
-            </p> */}
-            {/* <p className="hidden md:block">
-       
+            <br />
+
+            <p className="sm:block md:hidden lg:hidden">
+              In my spare time, you can find me learning{' '}
               <RoughNotation
                 animationDelay="1000"
                 animationDuration="3000"
-                type="highlight"
-                color="#0ea4e9"
+                type="underline"
+                color={color}
                 strokeWidth="3"
                 show={true}
               >
-                <span className="text-black dark:text-white">
-           
-                </span>
+                <span className="text-black dark:text-white">Python </span>
               </RoughNotation>
+              or participating in a Hackathon. I'm extremely interested in AI and Machine Learning
+              and eager to continue growing my knowledge and skills through the courses I'm taking
+              online.
+            </p>
 
+            <p className="hidden md:block">
+              In my spare time, you can find me learning{' '}
               <RoughNotation
+                animationDelay="1000"
+                animationDuration="3000"
                 type="underline"
+                color={color}
+                strokeWidth="3"
                 show={true}
-                color="#FBCFE8"
-                animationDelay={1500}
-                animationDuration={3000}
-                multiline={true}
               >
-   
+                <span className="text-black dark:text-white">Python </span>
               </RoughNotation>
-            </p> */}
+              or participating in a Hackathon. I'm extremely interested in AI and Machine Learning
+              and eager to continue growing my knowledge and skills through the courses I'm taking
+              online.
+            </p>
+
             <br />
+
             <p>
+              Here is a link to my{' '}
+              <Link
+                href={'https://github.com/oliviawilcox1'}
+                className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+              >
+                GitHub.
+              </Link>{' '}
+              Feel free to take a look at what I have been working on or reach out to me via{' '}
               <Link
                 href={'mailto:oliviawilcox07@gmail.com'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                Send me an email.
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="ml-0.5 inline-block h-4 w-4 fill-current"
-                >
-                  <g data-name="Layer 2">
-                    <g data-name="external-link">
-                      <rect width="24" height="24" opacity="0" />
-                      <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                      <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                    </g>
-                  </g>
-                </svg>
+                Email
               </Link>{' '}
+              with any questions or inquiries!
             </p>
+
             <br />
-            <p>
-              {/* <Link
-                href={'/uses'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                Here
-              </Link>{' '} */}
-            </p>
+
             <br />
-            <h1>About this site</h1>
-            <p></p>
+            <h3>About this Portfolio</h3>
             <p>
+              I was inspired how to create this portfolio through numerous other coders online.
               <ul>
                 <li>
                   <Link
+                    href={'https://github.com/pycoder2000/blog/tree/master'}
+                    className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    pycoder2000's Mere Musings
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="ml-0.5 inline-block h-4 w-4 fill-current"
+                    >
+                      <g data-name="Layer 2">
+                        <g data-name="external-link">
+                          <rect width="24" height="24" opacity="0" />
+                          <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                          <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </Link>
+                  - The source of inspiration
+                </li>
+                <li>
+                  <Link
                     href={'https://github.com/timlrx/tailwind-nextjs-starter-blog'}
-                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                    className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                   >
                     Timothy's Next.js and Tailwind CSS template
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="ml-0.5 inline-block h-4 w-4 fill-current"
+                    >
+                      <g data-name="Layer 2">
+                        <g data-name="external-link">
+                          <rect width="24" height="24" opacity="0" />
+                          <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                          <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={'https://www.einargudni.com/'}
+                    className="special-underline text-gray-700 no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    Einar Guðjónsson
+                    <svg
+                      xmlns="http:text-gray-7000/svg"
                       viewBox="0 0 24 24"
                       className="ml-0.5 inline-block h-4 w-4 fill-current"
                     >
