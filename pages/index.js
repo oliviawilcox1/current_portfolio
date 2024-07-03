@@ -50,7 +50,7 @@ export default function Home() {
       <div>
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
           <div className="pt-6">
-            <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="pb-6 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I'm{' '}
               <span className="text-primary-color-200 dark:text-primary-color-dark-500">
                 Olivia!
@@ -297,11 +297,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
-          Latest
-        </h2>
-        <hr className="border-gray-200 dark:border-gray-700" /> */}
       </div>
 
       {/* <div className="mx-auto max-w-3xl">
