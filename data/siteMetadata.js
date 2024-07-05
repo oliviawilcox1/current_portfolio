@@ -7,7 +7,7 @@ const siteMetadata = {
   // snippets: 'Reuseable code snippets,
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://musing.vercel.app',
+  siteUrl: 'https://oliviawilcox.vercel.app',
   siteRepo: 'https://github.com/oliviawilcox1/blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',

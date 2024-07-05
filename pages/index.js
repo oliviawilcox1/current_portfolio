@@ -60,8 +60,8 @@ export default function Home() {
               {siteMetadata.description}
             </h2>
             <p className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300 sm:block md:hidden lg:hidden">
-              Combining passion for new technology, keen software insights, <br /> and an internal
-              drive to learn to solve nuanced real-world problems.
+              Combining passion for new technology, keen software insights, and an internal drive to
+              learn to solve nuanced real-world problems.
               <br />
               <br />
               <RoughNotation
