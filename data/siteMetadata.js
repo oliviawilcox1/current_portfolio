@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Portfolio | Olivia Wilcox',
+  title: 'Olivia Wilcox Portfolio',
   author: 'Olivia Wilcox',
-  headerTitle: '',
+  headerTitle: 'Olivia Wilcox Portfolio',
   description:
     'A Lead Full Stack Engineer at Nextiles, currently located in NYC, with a proven track record in designing and implementing full stack applications.',
   // snippets: 'Reuseable code snippets,

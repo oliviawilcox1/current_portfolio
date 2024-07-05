@@ -44,6 +44,7 @@ const cardData = [
 export default function Home() {
   const { theme, setTheme, resolvedTheme } = useTheme()
 
+  const color = theme === 'light' ? '#FBA4BC' : '#DE1D8D'
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -68,7 +69,7 @@ export default function Home() {
                 animate="true"
                 type="underline"
                 show={true}
-                color="#FBA4BC"
+                color={color}
                 animationDelay={1000}
                 animationDuration={2500}
                 className="text-slate-600 dark:text-slate-300"

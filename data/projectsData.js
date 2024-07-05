@@ -31,7 +31,7 @@ const projectsData = [
   },
   {
     title: 'Portfolio',
-    description: `This current portfolio you are viewing!`,
+    description: `This current portfolio you are viewing now! Inspired by pycoder2000 and other amazing engineers.`,
     imgSrc: '',
     href: '',
     github: 'https://github.com/oliviawilcox1/current_portfolio',
