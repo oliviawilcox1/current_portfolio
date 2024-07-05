@@ -27,11 +27,6 @@ const RecommendCard = ({ title, description, href, tags, showLink = true }) =>
             </svg>
           </h4>
           <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
-          {/* {tags && (
-            <div className="max-w-none text-sm capitalize text-gray-500 dark:text-gray-400">
-              {tags.join(' • ')}
-            </div>
-          )} */}
         </div>
       </div>
     </CustomLink>
