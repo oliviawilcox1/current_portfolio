@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Olivia Wilcox Portfolio',
+  title: 'Olivia Wilcox | Home',
   author: 'Olivia Wilcox',
   headerTitle: 'Olivia Wilcox Portfolio',
   description:

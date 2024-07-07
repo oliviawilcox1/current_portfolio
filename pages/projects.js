@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <>
       <PageSEO
-        title={`Projects - ${siteMetadata.author}`}
+        title={`Projects | ${siteMetadata.author}`}
         description="A list of projects I have built"
       />
       <div className="mx-auto max-w-6xl divide-y divide-gray-400">
