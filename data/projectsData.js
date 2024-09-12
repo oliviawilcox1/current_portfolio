@@ -59,16 +59,16 @@ const projectsData = [
     tech2: 'MongoDB',
     tech3: 'Express',
   },
-  {
-    title: 'Tic Tac Toe',
-    description: `Who doesn't love a good tic tac toe game!`,
-    imgSrc: '',
-    href: '',
-    github: 'https://github.com/oliviawilcox1/tic-tac-toe',
-    tech1: 'HTML',
-    tech2: 'JavaScript',
-    tech3: 'CSS',
-  },
+  // {
+  //   title: 'Tic Tac Toe',
+  //   description: `Who doesn't love a good tic tac toe game!`,
+  //   imgSrc: '',
+  //   href: '',
+  //   github: 'https://github.com/oliviawilcox1/tic-tac-toe',
+  //   tech1: 'HTML',
+  //   tech2: 'JavaScript',
+  //   tech3: 'CSS',
+  // },
 ]
 
 export default projectsData

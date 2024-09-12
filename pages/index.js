@@ -5,6 +5,8 @@ import { PageSEO } from '@/components/SEO'
 // Data
 import siteMetadata from '@/data/siteMetadata'
 import LandingCard from '@/components/LandingCard'
+import LetterByLetterAnimation from '@/components/LetterByLetterAnimation'
+
 const cardData = [
   {
     href: '/projects',
@@ -53,9 +55,13 @@ export default function Home() {
           <div className="pt-6">
             <h1 className="pb-6 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I'm{' '}
-              <span className="text-primary-color-200 dark:text-primary-color-dark-500">
+              <LetterByLetterAnimation
+                text="Olivia!"
+                className="text-primary-color-200 dark:text-primary-color-dark-500"
+              />
+              {/* <span className="text-primary-color-200 dark:text-primary-color-dark-500">
                 Olivia!
-              </span>
+              </span> */}
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
               {siteMetadata.description}
