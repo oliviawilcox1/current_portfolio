@@ -119,6 +119,7 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="_Ba0lKk4Dl9XMvABJ9gZEtoMPITT5Vr5TGx2M-34Z_I"
           />
+          <meta name="google-adsense-account" content="ca-pub-4135198616013615" />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-background-color dark:text-white">
           <Main />

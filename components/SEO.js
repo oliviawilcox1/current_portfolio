@@ -28,6 +28,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
       />
+      <meta name="google-adsense-account" content="ca-pub-4135198616013615" />
     </Head>
   )
 }
@@ -66,6 +67,7 @@ export const TagSEO = ({ title, description }) => {
           title={`${description} - RSS feed`}
           href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
         />
+        <meta name="google-adsense-account" content="ca-pub-4135198616013615"></meta>
       </Head>
     </>
   )
@@ -158,6 +160,7 @@ export const BlogSEO = ({
             __html: JSON.stringify(structuredData, null, 2),
           }}
         />
+        <meta name="google-adsense-account" content="ca-pub-4135198616013615" />
       </Head>
     </>
   )

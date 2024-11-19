@@ -62,6 +62,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <ScrollTop />
           <Head>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
+            <meta name="google-adsense-account" content="ca-pub-4135198616013615" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}
 

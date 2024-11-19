@@ -6,12 +6,37 @@ import { PageSEO } from '@/components/SEO'
 import Card from '@/components/Card'
 
 export default function Projects() {
+  const getGithub = async () => {
+    const userResponse = await fetch('https://api.github.com/users/oliviawilcox1')
+    const userReposResponse = await fetch(
+      'https://api.github.com/users/oliviawilcox1/repos?per_page=100'
+    )
+
+    const user = await userResponse.json()
+    const repositories = await userReposResponse.json()
+    const mine = repositories.filter((repo) => !repo.fork)
+    const stars = mine.reduce((accumulator, repository) => {
+      return accumulator + repository['stargazers_count']
+    }, 0)
+
+    console.log(user, stars)
+    // res.setHeader('Cache-Control', 'public, s-maxage=1200, stale-while-revalidate=600')
+
+    // return res.status(200).json({
+    //   followers: user.followers,
+    //   stars,
+    //   repos: user.public_repos,
+    //   gists: user.public_gists,
+    // })
+  }
+  // getGithub()
   return (
     <>
       <PageSEO
         title={`Projects | ${siteMetadata.author}`}
         description="A list of projects I have built"
       />
+
       <div className="mx-auto max-w-6xl divide-y divide-gray-400">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
