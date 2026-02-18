@@ -111,7 +111,7 @@ export default function About({ authorDetails }) {
             </p>
 
             <p className="hidden md:block">
-              In my spare time, you can find me learning{' '}
+              In my spare time, you can find me learning about{' '}
               <RoughNotation
                 animationDelay="1000"
                 animationDuration="3000"
@@ -120,11 +120,10 @@ export default function About({ authorDetails }) {
                 strokeWidth="3"
                 show={true}
               >
-                <span className="text-black dark:text-white">Python </span>
-              </RoughNotation>
-              or participating in a Hackathon. I'm extremely interested in AI and Machine Learning
-              and eager to continue growing my knowledge and skills through the courses I'm taking
-              online.
+                <span className="text-black dark:text-white">LLM's</span>
+              </RoughNotation>{' '}
+              or making an idea come to life with a new app. Outside of engineering, I love to
+              roller skate, read and try out sourdough loaves from new bakeries.
             </p>
 
             <br />

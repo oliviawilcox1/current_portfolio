@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Olivia Wilcox',
   headerTitle: 'Olivia Wilcox Portfolio',
   description:
-    'A Lead Full Stack Engineer at Nextiles, currently located in NYC, with a proven track record in designing and implementing full stack applications.',
+    'A software engineer based in NYC, currently working on AI-driven workflow automation and data-intensive systems at FloQast, enabling scalable, reliable solutions for complex financial operations.',
   // snippets: 'Reuseable code snippets,
   language: 'en-us',
   theme: 'system', // system, dark or light

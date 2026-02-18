@@ -1,9 +1,23 @@
 const experienceData = [
   {
+    title: 'Software Engineer',
+    company: 'FloQast',
+    location: 'Remote',
+    range: '2024 - Present',
+    url: 'https://www.floqast.com/',
+    text: [
+      'Launched FloQast’s Transform AI product from concept to GA as a founding engineer, delivering an LLM-powered accounting automation platform that has scaled to $2.5M+ ARR and won the 2025 CODiE Award for Best FinTech Solution.',
+      'Designed and built a full-stack Snowflake query execution system; led architectural decisions and coordinated junior engineers to deliver an intuitive UI and backend supporting dynamic query parameters, multi-schema queries, and secure SQL execution.',
+      'Implemented a LangGraph-powered natural-language-to-SQL workflow, enabling non-technical users to query and retrieve Snowflake data in plain English, reducing developer time on unique customer data requests by 32%.',
+      'Reduced backend query costs by over 90%, from roughly $1,000 to near $0, while preserving accuracy and reliability by replacing expensive SELECT queries with Snowflake SHOW statements.',
+      'Led a company-wide initiative promoting Cursor-first workflows, driving 44% adoption across R&D and embedding AI-assisted experimentation into everyday engineering practices.',
+    ],
+  },
+  {
     title: 'Lead Full Stack Engineer',
     company: 'Nextiles',
     location: 'NYC, NY',
-    range: '2022 - Present',
+    range: '2022 - 2024',
     url: 'https://www.nextiles.com/',
     text: [
       'Architected, developed, and deployed a production-ready full stack application within three months using React, Material-UI, Express, and various charting libraries (Chart.js, D3, React Apex Charts), resulting in a 40% increase in user engagement through dynamic interactive front end data visualizations and enhanced data analysis capabilities',

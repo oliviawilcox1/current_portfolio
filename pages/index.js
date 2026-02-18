@@ -67,8 +67,8 @@ export default function Home() {
               {siteMetadata.description}
             </h2>
             <p className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300 sm:block md:hidden lg:hidden">
-              Combining passion for new technology, keen software insights, and an internal drive to
-              learn to solve nuanced real-world problems.
+              Applying thoughtful software design and emerging technologies to solve complex,
+              real-world problems.
               <br />
               <br />
               <RoughNotation
@@ -80,13 +80,13 @@ export default function Home() {
                 animationDuration={2500}
                 className="text-slate-600 dark:text-slate-300"
               >
-                Javascript expert by day, Python learner by night.&nbsp;
+                One line of code at a time&nbsp;
               </RoughNotation>
             </p>
 
             <p className="hidden pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300 md:block">
-              Combining passion for new technology, keen software insights,
-              <br /> and an internal drive to learn to solve nuanced real-world problems.
+              Applying thoughtful software design
+              <br /> and emerging technologies to solve complex, real-world problems.
               <br />
               <br />
               <RoughNotation
@@ -98,7 +98,7 @@ export default function Home() {
                 animationDuration={2500}
                 className="text-slate-600 dark:text-slate-300"
               >
-                Javascript expert by day, Python learner by night.&nbsp;
+                One line of code at a time.&nbsp;
               </RoughNotation>
               <div className="mt-8 text-slate-600 dark:text-slate-400">
                 <span className="text-sm">Click around to learn more! </span>
